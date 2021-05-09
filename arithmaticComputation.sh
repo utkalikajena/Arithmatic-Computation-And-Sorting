@@ -1,6 +1,6 @@
 #! /bin/bash
 declare -A computations
-
+declare -a computation
 read -p "Enter a value:" a
 read -p "Enter b value:" b
 read -p "Enter a value:" c
@@ -22,3 +22,9 @@ computations[result2]="$result2"
 computations[result3]="$result3"
 computations[result4]="$result4"
 echo "all computation results:" ${computations[@]}
+
+computation[result1]="$result1"
+computation[result2]="$result2"
+computation[result3]="$result3"
+computation[result4]="$result4"
+echo "all computation results in array:" ${computation[@]}
